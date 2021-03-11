@@ -39,6 +39,9 @@ header #logo {
 }
 
 /* Main */
+main .container {
+    padding: 100px 0 30px 0;
+}
 
 #burger-name {
     border: 0;
@@ -55,8 +58,15 @@ header #logo {
 
 .ingredients {
     list-style-type: none;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.ingredients li {
+    flex-basis: 50%;
 }
 
 .ingredients img {
-    width: 20px;
+    width: 50px;
 }
