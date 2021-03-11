@@ -9,15 +9,7 @@ for(var i=0; i<ingrLis.length; i++) {
     li.addEventListener("click", function() {
         // this is the li that is clicked
         var clickedCheckbox = this.children[1]; // the second child of the li == checkbox
-        console.log(clickedCheckbox);
-        var fakeCheck = this.children[2];
-        if (clickedCheckbox.checked) {
-            clickedCheckbox.checked = false;
-            fakeCheck.style.color = "transparent";
-        } else {
-            clickedCheckbox.checked = true;
-            fakeCheck.style.color = "#000";
-        }
+        clickedCheckbox.checked = !clickedCheckbox.checked;
     });
 }
 

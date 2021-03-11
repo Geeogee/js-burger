@@ -96,6 +96,11 @@ input[type="checkbox"] {
     background-color: #bc3b59;
 }
 
+
+input[type="checkbox"]:checked ~ .styled-checkbox {
+    color: #000;
+}
+
 .discount-cont {
     display: flex;
     justify-content: space-between;
