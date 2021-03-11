@@ -63,7 +63,7 @@ priceCalcBtn.addEventListener("click", function() {
             console.log("Discount code not found!")
         }
 
-        document.getElementById("price").innerHTML = totalPrice;
+        document.getElementById("price").innerHTML = totalPrice.toFixed(2);
 
     }
 });
