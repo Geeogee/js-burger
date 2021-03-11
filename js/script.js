@@ -1,15 +1,16 @@
-var ingrLis = document.getElementsByTagName("li");
-console.log(li);
 
-for(i=0; i<ingrLis.length; i++) {
+//Get the collection of all li elements
+var ingrLis = document.getElementsByTagName("li");
+
+for(var i=0; i<ingrLis.length; i++) {
     var li = ingrLis[i];
 
     li.addEventListener("click", function() {
+        // this is the li that is clicked
+        var clickedCheckbox = this.children[1]; // the second child of the li == checkbox
+        clickedCheckbox.checked = !clickedCheckbox.checked; // if checkbox.checked checked = true else checkbox.checked = false
 
-        var test = this.children;
-        console.log(test);
     });
-
 }
 
 
