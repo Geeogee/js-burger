@@ -10,13 +10,16 @@
 </head>
 <body>
     <header>
-        Create your Burger
+        <h1>
+            Create your Burger
+        </h1>
     </header>
 
     <main>
         <input type="text" id="burger-name" placeholder="Name your Burger">
 
         <h2>Ingredients</h2>
+
         <ul class="ingredients">
             <li>
                 <img src="img/cheese.svg" alt="Cheese">
@@ -51,8 +54,18 @@
         </ul>
 
         <h3>Discount Coupon</h3>
-        <input type="text" id="discount-code">
+        <input type="text" id="discount-code" placeholder="Insert here your discount code">
+        <button>Calculate</button>
     </main>
+
+    <footer>
+        <div class="price-div">
+            Price &euro;
+            <span id="price">
+                
+            </span>
+        </div>
+    </footer>
     <!-- Script -->
     <script src="js/script.js"></script>
 </body>
