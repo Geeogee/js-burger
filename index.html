@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        Create your Burger
+    </header>
+
+    <main>
+        <input type="text" id="burger-name" placeholder="Name your Burger">
+
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+            <li>
+                <img src="img/cheese.svg" alt="Cheese">
+                <input type="checkbox" id="cheese" data-price="2">
+                <label for="cheese">Cheese</label>
+            </li>
+            <li>
+                <img src="img/fried-egg.svg" alt="Fried Egg">
+                <input type="checkbox" id="egg" data-price="4">
+                <label for="egg">Fried Egg</label>
+            </li>
+            <li>
+                <img src="img/lettuce.svg" alt="Lettuce">
+                <input type="checkbox" id="lettuce" data-price="2">
+                <label for="lettuce">Lettuce</label>
+            </li>
+            <li>
+                <img src="img/tomato.svg" alt="Tomato">
+                <input type="checkbox" id="tomato" data-price="2">
+                <label for="tomato">Tomato</label>
+            </li>
+            <li>
+                <img src="img/mustard.svg" alt="Mustard">
+                <input type="checkbox" id="mustard" data-price="2">
+                <label for="mustard">Mustard</label>
+            </li>
+            <li>
+                <img src="img/ketchup.svg" alt="Ketchup">
+                <input type="checkbox" id="ketchup" data-price="2">
+                <label for="ketchup">Ketchup</label>
+            </li>
+        </ul>
+
+        <h3>Discount Coupon</h3>
+        <input type="text" id="discount-code">
+    </main>
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
