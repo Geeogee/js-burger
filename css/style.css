@@ -56,6 +56,7 @@ main .container {
     outline: 0;
 }
 
+
 .ingredients {
     list-style-type: none;
     display: flex;
@@ -65,8 +66,26 @@ main .container {
 
 .ingredients li {
     flex-basis: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .ingredients img {
     width: 50px;
 }
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.styled-checkbox {
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+    text-align: center;
+    color: transparent;
+    user-select: none;
+}
+

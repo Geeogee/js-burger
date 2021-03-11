@@ -1,6 +1,7 @@
 
 //Get the collection of all li elements
 var ingrLis = document.getElementsByTagName("li");
+var testCheck = document.getElementsByClassName("styled-checkbox");
 
 for(var i=0; i<ingrLis.length; i++) {
     var li = ingrLis[i];
@@ -8,8 +9,15 @@ for(var i=0; i<ingrLis.length; i++) {
     li.addEventListener("click", function() {
         // this is the li that is clicked
         var clickedCheckbox = this.children[1]; // the second child of the li == checkbox
-        clickedCheckbox.checked = !clickedCheckbox.checked; // if checkbox.checked checked = true else checkbox.checked = false
-
+        console.log(clickedCheckbox);
+        var fakeCheck = this.children[2];
+        if (clickedCheckbox.checked) {
+            clickedCheckbox.checked = false;
+            fakeCheck.style.color = "transparent";
+        } else {
+            clickedCheckbox.checked = true;
+            fakeCheck.style.color = "#000";
+        }
     });
 }
 
@@ -56,7 +64,6 @@ priceCalcBtn.addEventListener("click", function() {
         }
 
         document.getElementById("price").innerHTML = totalPrice;
-
 
     }
 });
