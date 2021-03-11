@@ -4,6 +4,55 @@
     box-sizing: border-box;    
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #fdbb40;
+}
+
+header > .container {
+    position: relative;
+}
+
+h1#main-title {
+    color: #000;
+    font-weight: 700;
+}
+
+header #logo {
+    position: absolute;
+    top: -100%;
+    right: 0;
+}
+
+/* Main */
+
+#burger-name {
+    border: 0;
+    padding: 10px 20px;
+    padding-left: 0;
+    
+    font-size: 35px;
+    color: #777b81;
+}
+
+#burger-name:focus {
+    outline: 0;
+}
+
 .ingredients {
     list-style-type: none;
 }
