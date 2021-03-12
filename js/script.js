@@ -3,7 +3,11 @@
 var ingrLis = document.getElementsByTagName("li");
 var testCheck = document.getElementsByClassName("styled-checkbox");
 
-for(var i=0; i<ingrLis.length; i++) {
+// Using event listener and let the user check the checkbox
+// via HTML, creates a bug that can be solved in CSS
+// using display none  on the checkbox and using a div that acts
+// like the checkbox
+for (var i=0; i<ingrLis.length; i++) {
     var li = ingrLis[i];
 
     li.addEventListener("click", function() {
@@ -19,7 +23,7 @@ var priceCalcBtn = document.getElementById("calc-btn");
 priceCalcBtn.addEventListener("click", function() {
 
     var burgerName = document.getElementById("burger-name").value;
-    if(!burgerName) {
+    if (!burgerName) {
 
         alert("Please, insert your burger name!")
     } else {
@@ -31,10 +35,10 @@ priceCalcBtn.addEventListener("click", function() {
 
         // Find what checkbox is checked 
         // And then add the data-price to the total
-        for(i=0; i<checkboxes.length; i++) {
+        for (i=0; i<checkboxes.length; i++) {
 
             var checkbox = checkboxes[i];
-            if(checkbox.checked) {
+            if (checkbox.checked) {
 
                 var ingrPrice = parseInt(checkbox.dataset.price);
                 totalPrice += ingrPrice;           
@@ -48,10 +52,17 @@ priceCalcBtn.addEventListener("click", function() {
         ];
 
         var discountCode = document.getElementById("discount-code").value;
-        if(discounts.includes(discountCode)) {
+
+        if (discounts.includes(discountCode)) {
+
             var discount = totalPrice * .2;
             totalPrice -= discount;
+            
+            // Contract form for discount calc
+            // totalPrice -= totalPrice * .2;
+            // totalPrice = totalPrice - (totalPrice * .2);
         } else {
+
             console.log("Discount code not found!")
         }
 

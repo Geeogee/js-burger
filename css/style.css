@@ -80,10 +80,12 @@ main .container {
     width: 50px;
 }
 
+/* solves the checkbox bug */
 input[type="checkbox"] {
     display: none;
 }
 
+/* solves the checkbox bug */
 .styled-checkbox {
     border: 1px solid #000;
     width: 20px;
@@ -96,7 +98,7 @@ input[type="checkbox"] {
     background-color: #bc3b59;
 }
 
-
+/* solves the checkbox bug */
 input[type="checkbox"]:checked ~ .styled-checkbox {
     color: #000;
 }
